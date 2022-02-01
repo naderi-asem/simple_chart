@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+.chart {
+    position: relative;
+    border: 2px solid grey;
+    flex: 0 0 500px;
+    height: 300px;
+    margin: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+.chart>.chart-item {
+    flex: 1;
+}
+/* .chart-item:hover {
+    background-color: #fd5f00;
+} */
+.selected {
+    background-color: #fd5f00 !important;
+    transition: all 0.3s ease-in-out;
+}
+.label-x {
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}
+.label-y {
+    position: absolute;
+    top: 50%;
+    left: -1.5em;
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+.info {
+    flex: 0 0 300px;
+}
+
